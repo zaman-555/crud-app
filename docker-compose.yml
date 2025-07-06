@@ -7,7 +7,7 @@ services:
     container_name: postgres
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_PASSWORD=password123
       - POSTGRES_DB=crudapp
     volumes:
       - postgres_data:/var/lib/postgresql/data
@@ -48,7 +48,7 @@ services:
     container_name: backend
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_PASSWORD=password123
       - POSTGRES_SERVER=postgres
       - POSTGRES_PORT=5432
       - POSTGRES_DB=crudapp

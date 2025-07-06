@@ -8,7 +8,7 @@ class Settings:
     PROJECT_VERSION: str = "1.0.0"
     
     POSTGRES_USER: str = os.getenv("POSTGRES_USER", "postgres")
-    POSTGRES_PASSWORD: str = os.getenv("POSTGRES_PASSWORD", "postgres")
+    POSTGRES_PASSWORD: str = os.getenv("POSTGRES_PASSWORD", "password123")
     POSTGRES_SERVER: str = os.getenv("POSTGRES_SERVER", "postgres")
     POSTGRES_PORT: str = os.getenv("POSTGRES_PORT", "5432")
     POSTGRES_DB: str = os.getenv("POSTGRES_DB", "crudapp")
